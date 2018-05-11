@@ -59,7 +59,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     protected void onDestroy() {
         super.onDestroy();
         if(videoView!=null) {
-            videoView.suspend();
+//            videoView.suspend();
+            videoView.stopPlayback();
         }
     }
 }
